@@ -1,0 +1,30 @@
+.bg-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes-heading {
+  font-family: roboto;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-box {
+  background-color: yellow;
+}
+
+.medium-box {
+  background-color: blue;
+}
+
+.large-box {
+  background-color: palevioletred;
+}

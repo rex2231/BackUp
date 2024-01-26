@@ -1,0 +1,33 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f5f8;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: roboto;
+  font-size: 16px;
+  color: grey;
+}
+
+.heading {
+  font-family: roboto;
+  font-size: 34px;
+}
+
+.count-number {
+  color: #c20a72;
+}
+
+.button {
+  background-color: #007bff;
+  padding: 8px;
+  color: white;
+  border: 0px;
+  border-radius: 3px;
+  width: 90px;
+}

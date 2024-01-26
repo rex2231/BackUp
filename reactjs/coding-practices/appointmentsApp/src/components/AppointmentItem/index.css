@@ -1,0 +1,27 @@
+.appointment-card {
+  border: solid 2px grey;
+  border-radius: 5px;
+  padding: 8px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3px;
+}
+
+.appointment-heading {
+  font-family: roboto;
+  font-size: 15px;
+}
+
+.appointment-description {
+  font-family: roboto;
+  font-size: 12px;
+}
+
+.star-button {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

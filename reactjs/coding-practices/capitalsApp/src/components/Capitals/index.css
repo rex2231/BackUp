@@ -1,0 +1,19 @@
+.bg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #93c5fd;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  min-height: 180px;
+  min-width: 530px;
+  padding: 50px;
+}
+
+.heading {
+  font-weight: 500;
+}

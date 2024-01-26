@@ -1,0 +1,73 @@
+.bg-container {
+  height: 100vh;
+  background-image: linear-gradient(to left, #ffeeee, #ffc0bb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card {
+  max-width: 60%;
+  min-width: 40%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-family: roboto;
+  text-align: center;
+}
+
+.reactions-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+
+.emoji-img {
+  height: 60px;
+  width: 60px;
+}
+
+.emoji-name {
+  font-size: 14px;
+}
+
+.reaction-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-heading {
+  font-size: 24px;
+  font-family: roboto;
+  text-align: center;
+}
+
+.thankyou-description {
+  color: #1e293b;
+  text-align: center;
+  font-family: roboto;
+}

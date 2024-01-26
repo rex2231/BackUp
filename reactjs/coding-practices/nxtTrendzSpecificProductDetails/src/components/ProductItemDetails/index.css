@@ -1,0 +1,14 @@
+.failure-view {
+  height: 200px;
+  width: 300px;
+}
+
+.product-image {
+  height: 400px;
+  width: 250px;
+  border-radius: 18px;
+}
+
+.product-details-top-container {
+  display: flex;
+}

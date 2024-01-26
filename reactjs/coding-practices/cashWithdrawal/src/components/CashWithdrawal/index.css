@@ -1,0 +1,27 @@
+.bg-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.withdrawal-card {
+  background-color: #150b3e;
+  padding: 20px;
+  border-radius: 8px;
+  height: 70%;
+  width: 80%;
+  color: white;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.website-logo {
+  height: 50px;
+  width: 100px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-container {
+  display: flex;
+}
+
+.timer-icon {
+  height: 15px;
+  width: 20px;
+}

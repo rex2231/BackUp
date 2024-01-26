@@ -1,0 +1,33 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notifications-heading{
+    font-family: roboto;
+}
+
+.notifications-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-1 {
+  background-color: white;
+}
+
+.note-2{
+    background-color: green;
+}
+
+.note-3{
+    background-color: yellow;
+}
+
+.note-4{
+    background-color: red;
+}

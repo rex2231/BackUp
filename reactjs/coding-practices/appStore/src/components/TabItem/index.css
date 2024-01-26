@@ -1,0 +1,17 @@
+.tabItem {
+  font-family: roboto;
+  font-weight: 600;
+  padding: 18px;
+  color: #7b8794;
+  border-bottom: 1px solid grey;
+}
+
+.active-tabItem {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  padding: 15px;
+}
+
+.button {
+  all: unset;
+}

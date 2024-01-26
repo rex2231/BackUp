@@ -1,0 +1,62 @@
+.bg-container {
+  background-image: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointments-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  min-width: 85%;
+  min-height: 50%;
+  max-width: 90%;
+}
+
+.add-appointments-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.appointments-image {
+  height: 350px;
+  width: 500px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 180px;
+  width: 250px;
+}
+
+.submit-button {
+  background-color: purple;
+  padding: 10px;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+}
+
+.bottom-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointments-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 200px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}

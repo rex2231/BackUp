@@ -1,0 +1,15 @@
+.blog-image {
+  height: 100px;
+  width: 600px;
+}
+
+.author-image {
+  width: 50%;
+  height: 50px;
+  width: 80px;
+}
+
+.blog-item {
+  border: solid gray 2px;
+  display: flex;
+}

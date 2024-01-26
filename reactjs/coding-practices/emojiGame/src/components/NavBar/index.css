@@ -1,0 +1,37 @@
+* {
+  font-family: roboto;
+  color: white;
+  font-weight: 500;
+}
+
+.unordered-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar {
+  background-color: #ffffff33;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.list-item {
+  display: flex;
+}
+
+.logo {
+  width: 45px;
+  height: 42px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.emojiGame-heading {
+  font-size: 20px;
+}

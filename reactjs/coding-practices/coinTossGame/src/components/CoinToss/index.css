@@ -1,0 +1,53 @@
+.bg-container {
+  background-image: linear-gradient(to left, #e2a139, #f9d423);
+  min-height: 100vh;
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.toss-game-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+
+.title {
+  color: #a35200;
+  font-family: roboto;
+  font-weight: 600;
+}
+
+.description {
+  color: black;
+  font-family: roboto;
+  font-weight: 500;
+}
+
+.coinImg {
+  height: 250px;
+  width: 250px;
+}
+
+.toss-coin-button {
+  color: #a35200;
+  background-color: #f9d423;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+}

@@ -1,0 +1,140 @@
+.bg-container {
+  background-image: linear-gradient(to left, #cffcf1, #defafe);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 500px;
+  width: 600px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  background-color: white;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 45px;
+  color: #12ffaa;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.status {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.timer-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.startAndReset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 200px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.timer-setting-text {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.timer-setting-option-container {
+  display: flex;
+  align-items: center;
+}
+
+.adjust-time-container {
+  display: flex;
+}
+
+.set-timer-font {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.adjust-time-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.show-time-limit {
+  background-image: linear-gradient(to left, #12ffaa, #4dece8);
+  height: 50px;
+  width: 90px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 30px;
+}
+
+.time-setting-font-size {
+  font-size: 30px;
+}
+
+.button {
+  margin: 0px;
+  border: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+.set-limit-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

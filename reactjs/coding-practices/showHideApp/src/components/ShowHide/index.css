@@ -1,0 +1,55 @@
+.bg-container {
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: white;
+  font-family: roboto;
+  font-size: 34px;
+  margin-top: 180px;
+  margin-bottom: 10px;
+}
+
+.buttons-containers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.name-card {
+  background-color: #fddddb;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  height: 120px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button {
+  color: #dd1264;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: roboto;
+  border: 1px solid grey;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: roboto;
+}

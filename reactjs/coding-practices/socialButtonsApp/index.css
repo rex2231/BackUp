@@ -1,0 +1,35 @@
+.bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  color: white;
+  font-family: "Bree Serif";
+}
+
+.button {
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.like-button {
+  background-color: yellow;
+}
+
+.comment-button {
+  background-color: white;
+  color: black;
+}
+
+.share-button {
+  background-color: blue;
+}

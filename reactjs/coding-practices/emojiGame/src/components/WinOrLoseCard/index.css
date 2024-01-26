@@ -1,0 +1,54 @@
+.winLose-bg {
+  background-color: #ffffff33;
+  border: solid 2px #ffffff33;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 80%;
+}
+
+.details-container {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-lose-img {
+  height: 400px;
+  width: 300px;
+}
+
+.heading {
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 50px;
+}
+
+.description {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.description-score {
+  font-family: roboto;
+  font-weight: 600;
+  font-size: 32px;
+  color: #6a59ff;
+  margin: 0px;
+}
+
+.play-button {
+  all: unset;
+  padding: 10px;
+  background-color: #ffce27;
+  color: black;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-top: 8px;
+}

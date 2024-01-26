@@ -1,0 +1,33 @@
+.money-details-card {
+  border: gray solid 2px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: content-box;
+  min-width: 250px;
+  min-height: 80px;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.info-container {
+}
+
+.title {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: roboto;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: roboto;
+  margin: 0;
+}

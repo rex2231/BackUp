@@ -1,0 +1,17 @@
+.arrow-img {
+  height: 22px;
+  width: 22px;
+  margin-right: 3px;
+}
+
+.suggestions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.push-button{
+    border: 0px;
+    background-color: transparent;
+}

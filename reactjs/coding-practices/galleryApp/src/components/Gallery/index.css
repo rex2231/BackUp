@@ -1,0 +1,43 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 34px;
+  margin-top: 34px;
+  max-width: 1140;
+}
+
+.image {
+  height: 400px;
+  width: 650px;
+  border-radius: 20px;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80vw;
+}
+
+.description {
+  color: gray;
+  font-weight: normal;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.an-container {
+  display: flex;
+  justify-content: center;
+}

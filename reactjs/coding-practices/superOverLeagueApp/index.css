@@ -1,0 +1,23 @@
+.bg-container {
+  background-color: #0f172a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: white;
+  font-family: Roboto;
+}
+
+.teams-container {
+}
+
+.team-logo {
+  height: 140px;
+  width: 140px;
+  margin: 0px;
+  border: 0px;
+}
