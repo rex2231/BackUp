@@ -1,9 +1,0 @@
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-menu {
-  display: flex;
-  list-style-type: none;
-}
