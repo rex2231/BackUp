@@ -1,0 +1,49 @@
+####
+GET http://localhost:3000/todos/?priority=HIGH
+<<<<<<< HEAD
+####
+GET http://localhost:3000/todos/1
+=======
+
+####
+GET http://localhost:3000/todos/10
+>>>>>>> ed52e5efdb1fec01b8f23304c837a9a73d573356
+
+####
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+<<<<<<< HEAD
+    "id": 1,
+    "todo": "LEARN TO FIGHT",
+=======
+    "id": 12,
+    "todo": "LEARN TO COOK",
+>>>>>>> ed52e5efdb1fec01b8f23304c837a9a73d573356
+    "priority": "HIGH",
+    "status": "TO DO"
+}
+
+####
+<<<<<<< HEAD
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+    "status": "DONE"
+}
+
+####
+DELETE http://localhost:3000/todos/1
+=======
+PUT http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "todo": "LEARN CSS"
+}
+
+####
+DELETE http://localhost:3000/todos/10
+>>>>>>> ed52e5efdb1fec01b8f23304c837a9a73d573356
