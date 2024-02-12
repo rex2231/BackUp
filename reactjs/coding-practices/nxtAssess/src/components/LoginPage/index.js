@@ -2,8 +2,14 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 import './index.css'
 
-class LoginRoute extends Component {
-  state = {username: '', password: '', errorMsg: '', showSubmitError: false}
+class LoginPage extends Component {
+  state = {
+    username: '',
+    password: '',
+    errorMsg: '',
+    showSubmitError: false,
+    showPassword: false,
+  }
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
@@ -33,14 +39,14 @@ class LoginRoute extends Component {
   }
 
   renderPasswordField = () => {
-    const {password} = this.state
+    const {password, showPassword} = this.state
     return (
       <>
-        <label className="input-label" htmlFor="password">
+        <label className="input-label" htmlFor="username">
           PASSWORD
         </label>
         <input
-          type="password"
+          type={showPassword ? 'text' : 'password'}
           value={password}
           id="password"
           onChange={this.onChangePassword}
@@ -52,12 +58,10 @@ class LoginRoute extends Component {
   }
 
   onSubmitSuccess = jwtToken => {
-    this.setState({showSubmitError: true})
+    this.setState({showSubmitError: false})
     const {history} = this.props
 
-    Cookies.set('jwt_token', jwtToken, {
-      expires: 30,
-    })
+    Cookies.set('jwt_token', jwtToken, {expires: 30})
     history.replace('/')
   }
 
@@ -77,11 +81,21 @@ class LoginRoute extends Component {
     const response = await fetch(url, options)
     const data = await response.json()
 
-    if (response.ok === true) {
-      this.onSubmitSuccess(data.jwt_token)
+    if (response.ok) {
+      this.onSubmitSuccess(data.jwtToken)
     } else {
       this.onSubmitFailed(data.error_msg)
     }
+  }
+
+  onShowPassword = () => {
+    // const {showPassword, password} = this.state
+    // const previewPassword = showPassword
+    //   ? '*'.repeat(password.length)
+    //   : password
+    this.setState(prevState => ({
+      showPassword: !prevState.showPassword,
+    }))
   }
 
   render() {
@@ -96,13 +110,22 @@ class LoginRoute extends Component {
       <div className="login-form-container">
         <div className="login-card">
           <img
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="website logo"
+            src="https://res.cloudinary.com/dyuf16cea/image/upload/v1707576156/Next%20Asses%20Project%20Resource/WebsiteLogo_lnpqzt.png"
+            alt="login website logo"
             className="website-logo"
           />
           <form onSubmit={this.onSubmitLogin}>
             <div className="input-container">{this.renderUsernameField()}</div>
             <div className="input-container">{this.renderPasswordField()}</div>
+            <div className="show-password-container">
+              <input
+                type="checkbox"
+                id="showPasswordCheckbox"
+                onClick={this.onShowPassword}
+                className="show-password-checkbox"
+              />
+              <label htmlFor="showPasswordCheckbox">Show Password</label>
+            </div>
             <button type="submit" className="login-button">
               Login
             </button>
@@ -114,4 +137,4 @@ class LoginRoute extends Component {
   }
 }
 
-export default LoginRoute
+export default LoginPage

@@ -136,3 +136,12 @@
   line-height: 16px;
   color: #ff0b37;
 }
+
+.show-password-container {
+  display: flex;
+}
+
+.show-password-text {
+  font-weight: 400;
+  font-size: 14px;
+}

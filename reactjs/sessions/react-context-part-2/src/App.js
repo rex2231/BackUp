@@ -3,14 +3,14 @@ import {Component} from 'react'
 import Header from './components/Header'
 import LandingSection from './components/LandingSection'
 import FeaturesSection from './components/FeaturesSection'
+
 import LanguageContext from './context/LanguageContext'
 
 class App extends Component {
-  state = {activeLanguage: 'HI'}
+  state = {activeLanguage: 'EN'}
 
-  changeLanguage = newLanguage => {
-    this.setState({activeLanguage: newLanguage})
-    console.log(newLanguage)
+  changeLanguage = activeLanguage => {
+    this.setState({activeLanguage})
   }
 
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
       <LanguageContext.Provider
         value={{
           activeLanguage,
-          changeLanguage: () => this.changeLanguage,
+          changeLanguage: this.changeLanguage,
         }}
       >
         <Header />

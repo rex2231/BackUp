@@ -1,0 +1,19 @@
+.config-container {
+  min-height: 20vh;
+  background-color: #445366;
+  color: white;
+  padding: 5px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}

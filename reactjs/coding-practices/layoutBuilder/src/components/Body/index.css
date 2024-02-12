@@ -1,0 +1,25 @@
+.Body-container {
+  padding: 10px;
+  width: 100%;
+  min-height: 250px;
+  background-color: #f0f4f6;
+  font-weight: bold;
+  color: #435566;
+}
+
+.side-container {
+  padding: 10px;
+  width: 100px;
+  min-height: 250px;
+  background-color: #dfe7ec;
+  font-weight: bold;
+  color: #435566;
+}
+
+.body-main-container {
+  display: flex;
+}
+
+.ul-list {
+  list-style-type: none;
+}
