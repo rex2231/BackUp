@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import Header from '../Header'
 import './index.css'
 
@@ -25,9 +26,11 @@ const HomePage = () => (
             All the progress will be lost, if you reload during the assessment
           </li>
         </ul>
-        <button type="button" className="start-assessment-button">
-          Start Assessment
-        </button>
+        <Link to="/assessment">
+          <button type="button" className="start-assessment-button">
+            Start Assessment
+          </button>
+        </Link>
       </div>
       <div>
         <img

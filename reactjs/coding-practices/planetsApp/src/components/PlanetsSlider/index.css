@@ -1,0 +1,17 @@
+.react-slick-bg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/planets-app/planets-bg-img.png');
+  background-size: fill;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.heading {
+  color: #01acfb;
+  font-size: 22px;
+}
+
+.planet-img {
+  height: 200px;
+  width: 300px;
+}

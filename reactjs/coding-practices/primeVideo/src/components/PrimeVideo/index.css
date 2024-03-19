@@ -1,0 +1,18 @@
+.prime-banner {
+  height: 40vh;
+  width: 100vw;
+}
+
+.bg-container {
+  min-height: 100vh;
+}
+
+.bottom-container {
+  padding: 15px;
+  background-color: black;
+  color: white;
+}
+
+.slider-container {
+  padding: 20px;
+}

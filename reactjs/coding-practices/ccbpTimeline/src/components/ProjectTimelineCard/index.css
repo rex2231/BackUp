@@ -1,0 +1,9 @@
+.project-image {
+  height: 100px;
+  width: 120px;
+}
+
+.title-duration {
+  display: flex;
+  justify-content: space-between;
+}

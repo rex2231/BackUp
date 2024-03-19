@@ -5,9 +5,9 @@ const Body = () => (
   <ConfigurationContext.Consumer>
     {value => (
       <div className="body-main-container">
-        {value.showLeftNavBar && (
+        {value.showLeftNavbar && (
           <div className="side-container">
-            <p>Left Nav Menu</p>
+            <h1>Left Navbar Menu</h1>
             <ul className="ul-list">
               <li>Item 1</li>
               <li>Item 2</li>
@@ -28,11 +28,11 @@ const Body = () => (
             </p>
           </div>
         )}
-        {value.showRightNavBar && (
+        {value.showRightNavbar && (
           <div className="side-container">
-            <p>Right Navbar</p>
-            <p>Box 1</p>
-            <p>Box 2</p>
+            <h1>Right Navbar Menu</h1>
+            <p>Ad 1</p>
+            <p>Ad 2</p>
           </div>
         )}
       </div>

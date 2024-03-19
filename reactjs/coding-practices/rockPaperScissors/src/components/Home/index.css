@@ -1,0 +1,61 @@
+.bg-container {
+  background-color: #1d3959;
+  min-height: 100vh;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Roboto';
+}
+
+.score-card {
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.score-card-items {
+  list-style-type: none;
+}
+
+.score {
+  background-color: white;
+  border-radius: 5px;
+  color: #1d3959;
+  width: 120px;
+  padding: 8px;
+  height: 100px;
+  text-align: center;
+}
+
+.score-heading {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.score-count {
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.game-icons {
+  height: 100px;
+  width: 100px;
+}
+
+.rules-img {
+  height: 400px;
+  width: 400px;
+}
+
+.result-you-opponent-card {
+  display: flex;
+}
+
+.result-card {
+  color: white;
+}
