@@ -1,0 +1,34 @@
+.track-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: roboto;
+}
+
+.track-image-container {
+  display: flex;
+}
+
+.track-image {
+  height: 100px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.track-genre {
+  color: #3b82f6;
+}
+
+.duration-delete-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+
+.delete-button{
+    all: initial;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}

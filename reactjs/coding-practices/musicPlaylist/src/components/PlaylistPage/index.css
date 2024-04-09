@@ -1,0 +1,77 @@
+.playlist-page {
+  height: 100vh;
+}
+
+.page-banner {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  height: 40%;
+  color: white;
+  padding: 30px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.title-search-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.artist-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.songs-container {
+  background-color: #13274d;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 60%;
+  overflow-y: auto;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.song-search-input {
+  all: initial;
+  font-family: roboto;
+  background-color: #13274d;
+  color: white;
+}
+
+.song-search-input-container {
+  border: 1px solid gray;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-songs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
