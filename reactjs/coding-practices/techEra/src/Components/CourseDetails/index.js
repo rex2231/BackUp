@@ -25,16 +25,20 @@ class CourseDetails extends Component {
     const url = `https://apis.ccbp.in/te/courses/${id}`
     const response = await fetch(url)
     const data = await response.json()
-    const updatedData = {
-      id: data.course_details.id,
-      name: data.course_details.name,
-      imageUrl: data.course_details.image_url,
-      description: data.course_details.description,
+    if (response.ok) {
+      const updatedData = {
+        id: data.course_details.id,
+        name: data.course_details.name,
+        imageUrl: data.course_details.image_url,
+        description: data.course_details.description,
+      }
+      this.setState({
+        courseData: updatedData,
+        apiStatus: apiStatusConstrains.success,
+      })
+    } else {
+      this.setState({apiStatus: apiStatusConstrains.failure})
     }
-    this.setState({
-      courseData: updatedData,
-      apiStatus: apiStatusConstrains.success,
-    })
   }
 
   coursePage = () => {
@@ -44,9 +48,9 @@ class CourseDetails extends Component {
         return (
           <div className="course-details-page">
             <div className="course-card">
-              <img src={courseData.imageUrl} alt="not found" />
+              <img src={courseData.imageUrl} alt={courseData.name} />
               <div className="course-card-details">
-                <p className="course-card-heading">{courseData.name}</p>
+                <h1 className="course-card-heading">{courseData.name}</h1>
                 <p className="course-card-description">
                   {courseData.description}
                 </p>
@@ -61,9 +65,9 @@ class CourseDetails extends Component {
               src="https://assets.ccbp.in/frontend/react-js/tech-era/failure-img.png"
               alt="failure view"
             />
-            <h1 className="failure-heading">Oops Something Went Wrong</h1>
+            <h1 className="failure-heading">Oops! Something Went Wrong</h1>
             <p className="failure-description">
-              We cannot seem to find the page you are looking for.
+              We cannot seem to find the page you are looking for
             </p>
             <button
               className="retry-button"

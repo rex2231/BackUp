@@ -23,15 +23,19 @@ class Courses extends Component {
     const url = 'https://apis.ccbp.in/te/courses'
     const response = await fetch(url)
     const data = await response.json()
-    const updatedData = data.courses.map(course => ({
-      id: course.id,
-      name: course.name,
-      logoUrl: course.logo_url,
-    }))
-    this.setState({
-      coursesData: updatedData,
-      apiStatus: apiStatusConstrains.success,
-    })
+    if (response.ok) {
+      const updatedData = data.courses.map(course => ({
+        id: course.id,
+        name: course.name,
+        logoUrl: course.logo_url,
+      }))
+      this.setState({
+        coursesData: updatedData,
+        apiStatus: apiStatusConstrains.success,
+      })
+    } else {
+      this.setState({apiStatus: apiStatusConstrains.failure})
+    }
   }
 
   coursesPage = () => {
@@ -41,20 +45,20 @@ class Courses extends Component {
         return (
           <div className="course-page-container">
             <h1>Courses</h1>
-            <div className="courses-container">
+            <ul className="courses-container">
               {coursesData.map(course => (
                 <Link to={`/courses/${course.id}`} key={course.id}>
-                  <div type="button" className="course-container">
+                  <li type="button" className="course-container">
                     <img
                       className="course-logo"
                       src={course.logoUrl}
                       alt={course.name}
                     />
                     <p className="course-name">{course.name}</p>
-                  </div>
+                  </li>
                 </Link>
               ))}
-            </div>
+            </ul>
           </div>
         )
       case apiStatusConstrains.failure:
@@ -64,7 +68,7 @@ class Courses extends Component {
               src="https://assets.ccbp.in/frontend/react-js/tech-era/failure-img.png"
               alt="failure view"
             />
-            <h1 className="failure-heading">Oops Something Went Wrong</h1>
+            <h1 className="failure-heading">Oops! Something Went Wrong</h1>
             <p className="failure-description">
               We cannot seem to find the page you are looking for.
             </p>
