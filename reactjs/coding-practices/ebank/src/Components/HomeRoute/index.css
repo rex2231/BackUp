@@ -1,0 +1,27 @@
+.home-page {
+  background-color: #152850;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.header-tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-button{
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.home-page-body{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,42 @@
+.page-bg {
+  min-height: 100vh;
+  background-color: #25262c;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-sub-container {
+  display: flex;
+  background-color: #1b1c22;
+  padding: 20px;
+  color: white;
+  width: 70%;
+}
+
+.page-heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-editor-container {
+  background-color: #25262c;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.options-container {
+  border-bottom: 1px solid #cbd5e1;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.option-button {
+  all: initial;
+  font-size: 22px;
+  color: white;
+  margin-left: 12px;
+  cursor: pointer;
+}
