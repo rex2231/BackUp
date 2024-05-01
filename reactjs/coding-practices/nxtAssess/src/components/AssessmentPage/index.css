@@ -209,13 +209,18 @@
   font-size: 20px;
   font-weight: 400;
   font-family: roboto;
-  padding: 18px;
+  cursor: pointer;
+  background-color: #ebf3ff;
   border-radius: 8px;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 420px;
-  cursor: pointer;
-  background-color: #ebf3ff;
+  padding: 20px;
+}
+
+.default-selected-option-button {
+  background-color: #5b6f94;
+  color: white;
 }
 
 .image-options-container {
@@ -232,9 +237,14 @@
   margin-right: 50px;
 }
 
+.selected-image-option-button {
+  border: solid 2px #263868;
+}
+
 .image-option-img {
   width: 310px;
   height: 90px;
+  cursor: pointer;
 }
 
 .loading-container {

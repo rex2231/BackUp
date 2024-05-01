@@ -124,7 +124,12 @@ class LoginPage extends Component {
                 onClick={this.onShowPassword}
                 className="show-password-checkbox"
               />
-              <label htmlFor="showPasswordCheckbox">Show Password</label>
+              <label
+                htmlFor="showPasswordCheckbox"
+                className="show-password-checkbox-text"
+              >
+                Show Password
+              </label>
             </div>
             <button type="submit" className="login-button">
               Login

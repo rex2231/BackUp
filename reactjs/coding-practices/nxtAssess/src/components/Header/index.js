@@ -12,7 +12,7 @@ const Header = props => {
     <nav className="header-bg">
       <ul className="nav-list">
         <Link to="/">
-          <li>
+          <li className="nav-list-item">
             <img
               src="https://res.cloudinary.com/dyuf16cea/image/upload/v1707576156/Next%20Asses%20Project%20Resource/HeaderLogo_kizdgk.png"
               alt="website logo"
@@ -20,7 +20,7 @@ const Header = props => {
             />
           </li>
         </Link>
-        <li>
+        <li className="nav-list-item">
           <button type="button" className="logout-button" onClick={onLogout}>
             Logout
           </button>

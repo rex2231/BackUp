@@ -1,9 +1,8 @@
 .header-bg {
   background-color: #263868;
-  padding: 8px;
+  padding: 0.1px;
   padding-left: 20px;
   padding-right: 20px;
-  max-height: 12vh;
 }
 
 .header-website-logo {
@@ -14,11 +13,19 @@
 
 .nav-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
 }
 
 .logout-button {

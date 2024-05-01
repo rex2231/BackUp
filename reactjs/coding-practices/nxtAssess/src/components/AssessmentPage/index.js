@@ -10,6 +10,7 @@ class AssessmentPage extends Component {
     questionsList: [],
     currentQuestion: 0,
     unanswerdQuestion: 0,
+    selectedOption: 0,
     score: 0,
   }
 
@@ -58,14 +59,22 @@ class AssessmentPage extends Component {
 
   addScore = isCorrect => {
     if (isCorrect) {
+      console.log(isCorrect)
       this.setState(prevState => ({score: prevState.score + 1}))
+    } else {
+      console.log('not is inCorrect')
     }
   }
 
+  handleSelectChange = index => {
+    this.setState({selectedOption: index})
+  }
+
   renderAssesmentContainer = () => {
-    const {questionsList, currentQuestion} = this.state
+    const {questionsList, currentQuestion, selectedOption} = this.state
     const question = questionsList[currentQuestion]
     console.log(questionsList)
+    console.log(currentQuestion)
     if (question !== undefined) {
       return (
         <div className="question-container">
@@ -74,14 +83,24 @@ class AssessmentPage extends Component {
             <hr className="break-line" />
             {question.optionsType === 'DEFAULT' && (
               <div className="default-options-container">
-                {question.options.map(option => (
-                  <label className="default-option-button" htmlFor={option.id}>
+                {question.options.map((option, index) => (
+                  <label
+                    className={`default-option-button ${
+                      index === selectedOption
+                        ? 'default-selected-option-button'
+                        : ''
+                    }`}
+                    htmlFor={option.id}
+                    key={option.id}
+                    onChange={() => this.handleSelectChange(index)}
+                  >
                     <input
                       type="radio"
                       key={option.id}
                       onClick={() => this.addScore(option.isCorrect)}
                       name="default"
                       id={option.id}
+                      checked={index === selectedOption}
                       value={option.isCorrect}
                     />
                     {option.text}
@@ -92,12 +111,13 @@ class AssessmentPage extends Component {
             {question.optionsType === 'SINGLE_SELECT' && (
               <div className="default-options-container">
                 <select className="select-options-container">
-                  {question.options.map(option => (
+                  {question.options.map((option, index) => (
                     <option
                       value={option.text}
                       id={option.id}
                       className="select-option"
                       key={option.id}
+                      selected={index === 0}
                     >
                       {option.text}
                     </option>
@@ -107,8 +127,17 @@ class AssessmentPage extends Component {
             )}
             {question.optionsType === 'IMAGE' && (
               <div className="default-options-container">
-                {question.options.map(option => (
-                  <label htmlFor={option.id} className="image-option-button">
+                {question.options.map((option, index) => (
+                  <label
+                    className={`"image-option-button" ${
+                      index === selectedOption
+                        ? 'selected-image-option-button'
+                        : ''
+                    }`}
+                    htmlFor={option.id}
+                    key={option.id}
+                    onChange={() => this.handleSelectChange(index)}
+                  >
                     <input
                       type="radio"
                       key={option.id}
@@ -116,6 +145,7 @@ class AssessmentPage extends Component {
                       name="default"
                       id={option.id}
                       value={option.isCorrect}
+                      checked={index === selectedOption}
                     />
                     <img
                       src={option.imageUrl}

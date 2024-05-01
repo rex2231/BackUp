@@ -19,7 +19,7 @@
 
 .website-logo {
   height: 80px;
-  width: 110px;
+  width: 140px;
   margin-bottom: 10px;
   align-self: center;
 }
@@ -37,14 +37,14 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
-  color: white;
+  color: #7e858e;
 }
 
 .username-input-field {
   font-size: 14px;
   height: 40px;
   border: 1px solid #d7dfe9;
-  color: black;
+  color: #171f46;
   background-color: white;
   border-radius: 2px;
   margin-top: 5px;
@@ -56,7 +56,7 @@
   font-size: 14px;
   height: 40px;
   border: 1px solid #d7dfe9;
-  color: black;
+  color: #171f46;
   background-color: white;
   border-radius: 2px;
   margin-top: 5px;
@@ -102,4 +102,8 @@
 
 .show-password-checkbox {
   margin-left: 0;
+}
+
+.show-password-checkbox-text {
+  cursor: pointer;
 }
